@@ -1,0 +1,24 @@
+{
+  "query": "What is the capital of France?",
+  "apiKeys": {
+    "openai": "sk-YOUR_OPENAI_KEY",
+    "anthropic": "sk-ant-YOUR_ANTHROPIC_KEY",
+    "gemini": "YOUR_GEMINI_KEY",
+    "grok": "xai-YOUR_GROK_KEY"
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "answer": {
+        "type": "string",
+        "description": "The answer to the query"
+      },
+      "confidence": {
+        "type": "number",
+        "description": "Confidence level from 0 to 1"
+      }
+    },
+    "required": ["answer", "confidence"],
+    "additionalProperties": false
+  }
+}

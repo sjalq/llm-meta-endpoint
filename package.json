@@ -6,11 +6,19 @@
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
 		"start": "wrangler dev",
-		"test": "vitest",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"test:unit": "vitest run tests/unit.test.js",
+		"test:property": "vitest run tests/property-based.test.js",
+		"test:edge": "vitest run tests/edge-cases.test.js",
+		"test:all-unit": "vitest run tests/unit.test.js tests/property-based.test.js tests/edge-cases.test.js",
+		"test:integration": "vitest run tests/integration.test.js",
+		"test:coverage": "vitest run --coverage",
 		"cf-typegen": "wrangler types"
 	},
 	"devDependencies": {
 		"@cloudflare/vitest-pool-workers": "^0.8.19",
+		"fast-check": "^4.3.0",
 		"typescript": "^5.5.2",
 		"vitest": "~3.2.0",
 		"wrangler": "^4.43.0"
