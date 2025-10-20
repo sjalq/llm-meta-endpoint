@@ -7,6 +7,7 @@
 	"name": "llm-meta-endpoint",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-10-14",
+	"account_id": "ba519ec59f507a523b157bc1bbcbde5f",
 	"compatibility_flags": [
 		"global_fetch_strictly_public"
 	],
